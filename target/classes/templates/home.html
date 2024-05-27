@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nik's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        .travel-tips img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nik's Personal Webpage</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="#travel-tips">Travel Tips</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Hello! I'm Nik, a DevOps professional from the United States. Welcome to my personal webpage where you can learn more about me, get in touch, and check out some of my travel tips.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="./images/ProfilePic.png" alt="Profile Picture" class="profile-pic">
+        <p>I am from the United States of America, working for a corporate giant for the past 7 years. Currently, I am part of the DevOps team overseeing the infrastructure side of the applications. Apart from that, I love to hang out with friends on weekends, maybe a long drive, or have a beer at the side of the beach. I'm not a typical party animal but would fit for any kind of parties with friends. I aim to see myself happy, healthy, and helping the needy in whichever way possible because, at the end of the day, only people and humanity matter the most.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="travel-tips">
+        <h2>Travel Tips</h2>
+        <p>Here are some of my favorite travel tips:</p>
+        <ul>
+            <li>Pack light and only bring essentials.</li>
+            <li>Always carry a power bank for your devices.</li>
+            <li>Keep a copy of important documents with you.</li>
+            <li>Try local food and explore local culture.</li>
+            <li>Stay hydrated and take care of your health.</li>
+        </ul>
+        <img src="./images/TravelWorld.png" alt="Travel Image">
+    </section>
+    <footer>
+        <p>&copy; 2024 Nik's Personal Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
